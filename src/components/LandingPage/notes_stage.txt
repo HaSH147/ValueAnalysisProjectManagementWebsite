@@ -1,0 +1,13 @@
+* every model should have a low variance and low bias
+* overfitting leads to High variance
+* Ridge regression helps us overcome overfitting
+* Lasso Regression doesn't just helps us overcome overfitting but also helps us to do feature selection : whenever the slope is low the feature is less important and it's not important to do the prediction. the slope here is moving to zero not Like in RIDGE REGRESSION when it's moving near zero.
+
+*ILOC* data.iloc[<row selection>, <column selection>]
+random forest decision trees 
+
+
+https://www.waystocap.com/blog/fr/quels-sont-les-documents-necessaires-pour-limportation/ 
+
+
+Coursera Data Cleaning Part removing ....
