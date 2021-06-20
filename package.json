@@ -1,47 +1,35 @@
 {
-  "name": "client",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "@material-ui/core": "^4.11.0",
-    "@testing-library/jest-dom": "^5.11.5",
-    "@testing-library/react": "^11.1.1",
-    "@testing-library/user-event": "^12.2.0",
-    "axios": "^0.21.1",
-    "moment": "^2.29.1",
-    "react": "^17.0.1",
-    "react-beautiful-dnd": "^13.0.0",
-    "react-datepicker": "^3.3.0",
-    "react-dom": "^17.0.1",
-    "react-hook-form": "^6.11.0",
-    "react-icons": "^3.11.0",
-    "react-particles-js": "^3.4.1",
-    "react-router-dom": "^5.2.0",
-    "react-scripts": "4.0.0",
-    "web-vitals": "^0.2.4"
-  },
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./bin/www",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "start": "per-env",
+    "start:development": "nodemon -r dotenv/config ./bin/www",
+    "start:production": "./bin/www"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-bearer-token": "^2.4.0",
+    "express-validator": "^6.6.1",
+    "jsonwebtoken": "^8.5.1",
+    "morgan": "^1.10.0",
+    "per-env": "^1.0.2",
+    "pg": "^8.4.2",
+    "sequelize": "^6.3.5"
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "devDependencies": {
+    "dotenv-cli": "^4.0.0",
+    "nodemon": "^2.0.6",
+    "sequelize-cli": "^6.2.0"
+  },
+  "engines": {
+    "node": "10.x"
   }
 }
